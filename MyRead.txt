@@ -1,0 +1,20 @@
+1- 下载1.20源码
+
+2- 修改/console/resource/META-INF/nacos-default.properties配置
+db.num=1
+db.url.0=jdbc:mysql://192.168.118.128:5406/domi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useJDBCCompliantTimezoneShift=true&useSSL=false
+#db.url.1=jdbc:mysql://11.163.152.91:3306/diamond_devtest?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+db.user=root
+db.password=root80
+
+3- mysql8的支持
+修改数据库驱动版本
+// 修改com.alibaba.nacos.naming.hanlthcheck.MysqlHealthCheckProcessor
+// 修改前 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+// 修改后 import com.mysql.cj.jdbc.MysqlDataSource;
+
+4- 新建配置文件：
+C:\Users\Administrator\nacos\conf 新建 cluster.conf文件
+127.0.0.1:8847
+127.0.0.1:8846
+127.0.0.1:8845
