@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nacos-address" />
+        <module name="nacos-api" />
+        <module name="nacos-client" />
+        <module name="nacos-cmdb" />
+        <module name="nacos-common" />
+        <module name="nacos-config" />
+        <module name="nacos-console" />
+        <module name="nacos-core" />
+        <module name="nacos-example" />
+        <module name="nacos-istio" />
+        <module name="nacos-naming" />
+        <module name="nacos-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nacos-address" target="1.8" />
+      <module name="nacos-all" target="1.8" />
+      <module name="nacos-api" target="6" />
+      <module name="nacos-client" target="6" />
+      <module name="nacos-cmdb" target="1.8" />
+      <module name="nacos-common" target="6" />
+      <module name="nacos-config" target="1.8" />
+      <module name="nacos-console" target="1.8" />
+      <module name="nacos-core" target="8" />
+      <module name="nacos-distribution" target="1.8" />
+      <module name="nacos-example" target="1.8" />
+      <module name="nacos-istio" target="1.8" />
+      <module name="nacos-naming" target="1.8" />
+      <module name="nacos-test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
